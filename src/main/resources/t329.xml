@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Only ONE Computer bean here, so byType works -->
+    <bean id="com" class="springtopics.t329.Laptop"/>
+
+    <!-- autowire removes the need to write <property ... ref="..."/> manually -->
+    <bean id="alien" class="springtopics.t329.Alien" autowire="byType"/>
+
+    <!-- Options for autowire:
+         byName      -> property name ("com") must match a bean id ("com")
+         byType      -> finds a bean matching the property's type (must be exactly one)
+         constructor -> like byType, but injects through the constructor
+         no          -> default, no autowiring -->
+</beans>
