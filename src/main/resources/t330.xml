@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="laptop" class="springtopics.t330.Laptop"/>
+
+    <!-- primary="true": if multiple beans match, THIS one wins -->
+    <bean id="desktop" class="springtopics.t330.Desktop" primary="true"/>
+
+    <bean id="alien" class="springtopics.t330.Alien" autowire="byType"/>
+</beans>
