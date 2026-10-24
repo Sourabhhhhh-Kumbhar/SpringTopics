@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- beans go here -->
+    <!-- id = unique identifier; class = fully qualified class name -->
+    <!-- name = extra aliases, separated by commas (optional) -->
+    <bean id="alien" name="a1,a2" class="springtopics.t322.Alien"/>
+
+</beans>
