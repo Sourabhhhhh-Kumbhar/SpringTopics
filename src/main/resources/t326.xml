@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="laptop" class="springtopics.t326.Laptop"/>
+
+    <bean id="alien" class="springtopics.t326.Alien">
+        <property name="age" value="21"/>        <!-- value: for primitives/Strings -->
+        <property name="lap" ref="laptop"/>      <!-- ref: for other beans (objects) -->
+    </bean>
+</beans>
