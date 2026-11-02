@@ -1,0 +1,14 @@
+package javaConfigt338;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        Alien a = context.getBean(Alien.class);
+        a.code();
+    }
+}
