@@ -1,7 +1,9 @@
 package springtopics.t321;
 
-public class Alien {
-    public void code() {
+public class Alien
+{
+    public void code()
+    {
         System.out.println("Coding...");
     }
 }
