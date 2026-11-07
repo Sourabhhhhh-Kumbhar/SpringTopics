@@ -6,17 +6,20 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
 @Configuration
-public class AppConfig {
+public class AppConfig
+{
 
     @Bean
     @Scope("singleton")   // ek hi object
-    public Alien alienSingle() {
+    public Alien alienSingle()
+    {
         return new Alien();
     }
 
     @Bean
     @Scope("prototype")   // har baar naya object
-    public Alien alienProto() {
+    public Alien alienProto()
+    {
         return new Alien();
     }
 }
